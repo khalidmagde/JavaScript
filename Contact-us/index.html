@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="sec-1">
+      <div class="container">
+        <form onsubmit="emailSend(); reset(); return false;">
+          <h5>name</h5>
+          <input type="text" id="name" required />
+          <h5>email</h5>
+          <input type="email" id="email" required />
+          <h5>Your Message</h5>
+          <textarea
+            id="messages"
+            rows="4"
+            placeholder="how can we help you"
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="/email.js"></script>
+    </section>
+  </body>
+</html>
